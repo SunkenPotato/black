@@ -1,0 +1,38 @@
+.post-list-meta {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.date {
+    padding: 5px;
+    font-family: "JetBrains Mono", monospace;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(78,9,121,1) 50%, rgba(255,0,26,1) 100%);
+    border-radius: 3px;
+    color: black;
+}
+
+.post-list-i {
+    transition: box-shadow .5s;
+    background-color: #0a0a0a;
+    margin-right: 50%;
+    margin-left: 7%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-color: #434343;
+    box-shadow: 5px 5px 15px 5px #505050;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 50px;
+}
+.post-list-i:hover {
+    box-shadow: 10px 10px 15px 5px #505050;
+}
+
+.post-list-title {
+    padding: 0;
+    max-width: max-content;
+    font-size: 2rem
+}

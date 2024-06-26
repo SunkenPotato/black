@@ -1,0 +1,39 @@
+.contact {
+    margin: 5%;
+}
+
+input{
+    font-family: "Inter";
+    padding: 5px;
+    background-color: darkslategray;
+    border-style: solid;
+    border-color: darkgray;
+    color: white;
+}
+
+textarea {
+    font-family: "Inter";
+    padding: 5px;
+    color: white;
+}
+
+.contact-text {
+    height: 300px !important;
+}
+
+#info-text {
+    display: none
+}
+
+#contact-from {
+    margin: 0 20px 30px 0px;
+}
+
+#contact-body {
+    width: 30%;
+    height: 200px;
+    background-color: darkslategray;
+    resize: none;
+    border-width: 3px;
+    border-radius: 3px;
+}

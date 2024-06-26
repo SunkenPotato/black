@@ -1,0 +1,33 @@
+{{ define "main" }}
+  <head>
+    <link rel="stylesheet" href="/css/list.css">
+  </head>
+  <main>
+    <section class="post-list">
+      <article>
+          <h1 class="h1-special center-text">Posts</h1>
+        <!-- "{{ .Content }}" pulls from the Markdown content of the corresponding _index.md -->
+        {{ .Content }}
+      </article>
+      <div class="divider" style="margin: 5%"></div>
+      <ul>
+        <!-- Ranges through content/posts/*.md -->
+        {{ range .Pages }}
+        <li>
+          <article class="post-list-i text">
+            <div class="post-list-meta">
+              <h3 class="post-list-title text">{{ .LinkTitle }}</h3> 
+              <div style="width: 5%"></div>
+              <span style="float: right" class="date">{{ .Date.Format "Jan 2, 2006" }}</span>
+              <div style="width: 63%"></div>
+            </div>
+
+            <p>{{ .Summary }}</p>
+            <a href="{{ .Permalink }}" class="read-more anim-link">-> Read more</a>
+          </article>
+        </li>
+        {{ end }}
+      </ul>
+  </section>
+  </main>
+{{ end }}

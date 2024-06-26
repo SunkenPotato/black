@@ -1,0 +1,14 @@
+<div id="nav-container" class="container">
+    <nav id="nav" class="nav justify-content-center">
+        {{ range .Site.Menus.main }}
+        <a class="anim-link nav-link" {{ with .Params.disabled }} style="pointer-events: none;" {{ end }} href="{{ .URL }}">
+        {{ $text := print .Name | safeHTML }}
+        {{ $text }}
+        </a>
+        {{ end }}
+    </nav>
+    <script src="/js/navbar.js"></script>
+    <div id="image-wrapper">
+        <img src="{{ .Site.Params.FrontImage }}" alt="Title image">
+    </div>
+</div>

@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<head>
+    <link rel="stylesheet" href="/css/about.css">
+</head>
+
+<div style="display: flex; justify-content: center">
+    <h1 class="text">{{ .Title }}</h1>
+</div>
+<section class="about-content text">
+{{ .Content }}
+</section>
+<script src="/js/about.js"></script>
+{{ end }}
