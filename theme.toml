@@ -8,6 +8,7 @@ homepage = "http://sunkenpotato.com/projects/black"
 tags = ["simple", "dark"]
 features = []
 min_version = "0.90.0"
+demosite = "https://sunkenpotato.com"
 
 [author]
   name = "SunkenPotato"
